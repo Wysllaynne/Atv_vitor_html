@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<style>
+    body{
+       font-family: Arial, sans-serif;
+       margin: 0;
+       padding: 0;
+       h3 {
+           color: rgb(87, 90, 90);
+       }
+   }
+   header{
+       background-color: #ffff00;
+       color: green;
+       padding:5px;
+       display: flex;
+       flex-direction: row;
+       gap: 1px;
+       img {
+           margin-top: 10px;
+           margin-right: 10px;
+       }   
+   }
+</style>
+
+<body>
+    <header>
+        <img src="https://logodetimes.com/times/selecao-brasileira-brasil-novo-logo-2019-com-estrelas-e-nome/logo-selecao-brasileira-brasil-novo-logo-2019-com-estrelas-e-nome-4096.png"
+         alt="" width="60px" height="60px">
+        <h1>Seleção Brasileira</h1>
+    </header><br>
+    <nav>
+        <a href="index.html">Situação atual</a>
+        <a href="escalacao.html">Convocação</a>
+        <a href="tabela.html">Tabela de Classificação</a>
+        <a href="cadastro.html">Cadastro</a>
+    </nav>
+    <form>
+        <h1>Cadastro</h1>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" maxlength="100" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\[a-z].{2,}$" required >
+        <br><br>
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" minlength="8" maxlength="8"><br><br>
+
+        <label for="data">Data:</label>
+        <input type="date" id="data" name="nome" required>
+        <br><br>
+
+        <label for="uniforme favorito">Uniforme Favorito:</label><br><br>
+        <input type="radio" id="amarelo" name="uniforme" value="amarelo">
+        <label for="amarela">Amarelo</label><br>
+        <input type="radio" id="azul" name="uniforme" value="azul">
+        <label for="azul">Azul</label><br><br>
+
+        <label for="atacante favorito">Atacante Favorito da América do Sul:</label>
+            <select id="atacante" name="atacante">
+            <option value="endrik">Endrick</option>
+            <option value="james rodriguez">James Rodriguez</option>
+            <option value="messi">Messi</option>
+            <option value="neymar">Neymar</option>
+            <option value="suarez">Suárez</option>
+            <option value="vini jr">Vini Jr</option>
+        </select>
+        <br><br><br>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="3" cols="30"></textarea><br><br>
+
+        <input type="checkbox" id="news" name="news">
+        <label for="desejo receber novidades e ofertas por email.">Desejo receber novidades por email.</label>
+        <br><br>
+        
+        <button>Cadastrar</button>
+
+    </form>
+    <br>
+    <footer>
+        <p><em>Todos os direitos reservados &copy; 2022</em></p>
+        <p><em>Desenvolvido por </em><a href="https://github.com/wysll"><em>Wysll</em></a></p>
+    </footer>
+</body>
+</html>
